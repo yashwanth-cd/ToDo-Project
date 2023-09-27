@@ -1,0 +1,56 @@
+/* I USED CSS AS I AM NOT FAMILIAR WITH BOOTSTRAP */
+body {
+  background: #79a7d3;
+  font-family: Abolition;
+}
+.done {
+  text-decoration: line-through;
+}
+.card {
+  border: solid #ffffd2 5px;
+  border-radius: 40px;
+  background: #6883bc;
+}
+.card-header {
+  font-size: 50px;
+  font-weight: 600;
+  background-color: #ffffd2;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+span {
+  font-size: 25px;
+}
+.form-control {
+  font-size: 20px;
+}
+.task {
+  font-size: 25px;
+}
+.btn {
+  border: solid 3px;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+}
