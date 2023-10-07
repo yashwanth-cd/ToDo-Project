@@ -106,8 +106,8 @@ if(isset($_GET['action'])) {
                       $done = $row['status'] == 1 ? 'Done' : '';
                     echo ' 
                     <div class="row mt-4"> 
-                    <div class="col-sm-12 col-md-1"><h5>'.$i.'</h5></div>
-                    <div class="task col-sm-12 col-md-6"><h5 class='.$done.'>'.$row['name'].'</h5></div>
+                    <div class="col-sm-12 col-md-1"><h5 style="color: white;">'.$i.'</h5></div>
+                    <div class="task col-sm-12 col-md-6"><h5 style="color: white;" class='.$done.'>'.$row['name'].'</h5></div>
                     <div class="col=sm-12 col-md-5">
                       <a href="?action=done&item='.$row['id'].'" class="btn btn-outline-dark">Mark As Done</a>
                       <a href="?action=delete&item='.$row['id'].'" class="btn btn-outline-danger">Delete</a>
@@ -123,7 +123,7 @@ if(isset($_GET['action'])) {
                       src="folder.png"
                       width="100px"
                       alt="Empty List"
-                    /><br /><span>Your List is Empty</span>
+                    /><br /><span style="color: white;">Your List is Empty</span>
                     </center> 
                     ';
                   }
